@@ -4,6 +4,10 @@
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
+  --cg-bgrnd-green: rgb(176, 195, 163);
+  --cg-egg-green: rgb(245, 253, 239);
+  --cg-pastel-green: rgb(181, 208, 163);
+  --cg-grey-green: rgb(75, 87, 67);
 }
 
 html {
@@ -11,7 +15,7 @@ html {
 }
 
 body {
-  background: var(--cg-grey);
+  background: var(--cg-bgrnd-green);
   position: relative;
   min-height: 100vh;
   padding: 0;
@@ -34,7 +38,7 @@ body {
   align-items: center;
   text-align: center;
 
-  background-color: var(--cg-black);
+  background-color: var(--cg-grey-green);
   color: var(--cg-white);
   padding: 0px 0px;
 
@@ -64,12 +68,13 @@ body {
 }
 
 .navbar a:hover {
-  color: var(--cg-blue);
+  color: var(--cg-pastel-green);
+  text-transform: uppercase;
   text-decoration: underline;
 }
 
 .navbar a:active {
-  color: var(--cg-blue);
+  color: var(--cg-green);
 }
 
 .logo a {
@@ -120,6 +125,7 @@ main {
   height: 500px;
   flex-basis: 50px;
   flex-grow: 2;
+  margin-left: 150px
 
   /* Debug border */
   /* border: 2px solid black; */
@@ -127,14 +133,14 @@ main {
 
 .project-details {
   display: flex;
-  background-color: var(--cg-white);
+  background-color: var(--cg-egg-green);
   width: 30%;
-  height: 500px;
+  height: 400px;
   flex-shrink: 1;
   padding: 0 20px;
-  margin: 0px;
+  margin-left: 100px;
   line-height: 1.5;
-  overflow: scroll;
+  /*overflow: scroll;*/
 
   flex-direction: column;
   text-align: center;
@@ -172,10 +178,10 @@ main {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background-color: #f8f8f8;
+  background-color: var(--cg-egg-green);
   border: 1px solid #ccc;
   border-radius: 5px;
-  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  /*box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); */
 }
 
 .about-image img {
@@ -212,6 +218,27 @@ main {
   text-align: center;
 
   border-radius: 2px;
+}
+
+.resume {
+  background-color: var(--cg-egg-green);
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+.resume h3, p {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.resume h1, h2 {
+  margin-left: 25px;
+}
+
+.resume li {
+  margin-left: 5px;
 }
 
 .button:hover {
@@ -255,7 +282,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cg-black);
+  background-color: var(--cg-grey-green);
   color: var(--cg-white);
   position: absolute;
   bottom: 0;
