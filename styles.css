@@ -125,7 +125,6 @@ main {
   height: 500px;
   flex-basis: 50px;
   flex-grow: 2;
-  margin-left: 150px
 
   /* Debug border */
   /* border: 2px solid black; */
@@ -138,7 +137,7 @@ main {
   height: 400px;
   flex-shrink: 1;
   padding: 0 20px;
-  margin-left: 100px;
+  margin-left: 80px;
   line-height: 1.5;
   /*overflow: scroll;*/
 
