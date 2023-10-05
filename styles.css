@@ -8,6 +8,7 @@
   --cg-egg-green: rgb(245, 253, 239);
   --cg-pastel-green: rgb(181, 208, 163);
   --cg-grey-green: rgb(75, 87, 67);
+  --cg-green: rgb(66, 118, 32);
 }
 
 html {
@@ -67,9 +68,14 @@ body {
   font-family: monospace;
 }
 
-.navbar a:hover {
+.navbar ul a:hover {
   color: var(--cg-pastel-green);
   text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.navbar h1 a:hover {
+  color: var(--cg-pastel-green);
   text-decoration: underline;
 }
 
@@ -127,6 +133,8 @@ main {
   flex-grow: 2;
   margin-left: 70px;
   margin-bottom: 10px;
+  border: 5px solid var(--cg-green);
+  border-radius: 5px;
   /* Debug border */
   /* border: 2px solid black; */
 }
@@ -192,6 +200,10 @@ main {
   max-width: 300px;
   border-radius: 3px;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.about-image :hover {
+  transform: scale(1.009);
 }
 
 .about-text {
@@ -274,6 +286,8 @@ textarea {
   border-radius: 4px;
   font-size: 16px;
   resize: none;
+  border: 5px solid var(--cg-grey-green);
+  border-radius: 5px;
 }
 
 /* Add some spacing to the form */
